@@ -1,0 +1,56 @@
+html {
+	height: 100%;
+}
+
+body {
+	background: linear-gradient(135deg, #2e0eff, #2e0eff 15%, #05d1ff);
+}
+
+.hands {
+	background-color: #000;
+	position: relative;
+	border-radius: 20px;
+	transform-origin: center right;
+}
+
+#clock {
+	border: 8px #FFF solid;
+	border-radius: 50%;
+	height: 24em;
+	width: 24em;
+	margin: 10em auto;
+}
+
+#secondHand {
+	background-color: #ff970e;
+	height: 1%;
+	width: 11em;
+	top: 12em;
+	left: 3em;
+	transform-origin: 81.8%;
+	animation: rotate 60s infinite linear;
+}
+
+#minuteHand {
+	width: 10em;
+	height: 1.2%;
+	top: 11.7em;
+	left: 2em;
+	animation: rotate 3600s infinite linear;
+	//animation: rotate 70s infinite linear;
+}
+
+#hourHand {
+	height: 1.8%;
+	width: 7em;
+	left: 5em;
+	top: 11.35em;
+	animation: rotate 43200s infinite linear;
+	//animation: rotate 70s infinite linear;
+}
+
+@keyframes rotate {
+	100% {
+		transform: rotateZ(360deg);
+	}
+}
