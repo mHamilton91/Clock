@@ -3,7 +3,7 @@ html {
 }
 
 body {
-	background: linear-gradient(135deg, #2e0eff, #2e0eff 15%, #05d1ff);
+	background: linear-gradient(135deg, #2e0eff, #05d1ff);
 }
 
 .hands {
@@ -11,6 +11,8 @@ body {
 	position: relative;
 	border-radius: 20px;
 	transform-origin: center right;
+	transform: rotate(90deg);
+	transition: all 0.01s;
 }
 
 #clock {
@@ -19,16 +21,19 @@ body {
 	height: 24em;
 	width: 24em;
 	margin: 10em auto;
+	background-image: url(clockFace.jpg);
+	background-size: 34em;
+	background-position: center;
 }
 
 #secondHand {
-	background-color: #ff970e;
+	background-color: #05d1ff;
 	height: 1%;
 	width: 11em;
 	top: 12em;
 	left: 3em;
-	transform-origin: 81.8%;
-	animation: rotate 60s infinite linear;
+	transform-origin: 81.818181%;
+	//transition-timing-function: linear;
 }
 
 #minuteHand {
@@ -36,8 +41,7 @@ body {
 	height: 1.2%;
 	top: 11.7em;
 	left: 2em;
-	animation: rotate 3600s infinite linear;
-	//animation: rotate 70s infinite linear;
+	//animation: rotate 3600s infinite steps(59);
 }
 
 #hourHand {
@@ -45,12 +49,11 @@ body {
 	width: 7em;
 	left: 5em;
 	top: 11.35em;
-	animation: rotate 43200s infinite linear;
-	//animation: rotate 70s infinite linear;
+	//animation: rotate 43200s infinite linear;	
 }
 
-@keyframes rotate {
+/* @keyframes rotate {
 	100% {
 		transform: rotateZ(360deg);
 	}
-}
+} */
