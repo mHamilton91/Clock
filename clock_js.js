@@ -1,6 +1,3 @@
-//var date = new Date();
-//var hands = document.querySelectorAll('.hands');
-
 function setDate() {
 	const date = new Date();
 	const hands = document.querySelectorAll('.hands');
