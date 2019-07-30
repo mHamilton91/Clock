@@ -26,34 +26,36 @@ body {
 	background-position: center;
 }
 
+#center {
+	height: 1em;
+	width: 1em;
+	border-radius: 50%;
+	background-color: #000;
+	position: relative;
+	top: 12em;
+	left: 11.5em;
+	z-index: 10;
+}
+
 #secondHand {
 	background-color: #05d1ff;
 	height: 1%;
 	width: 11em;
-	top: 12em;
+	top: 11.5em;
 	left: 3em;
 	transform-origin: 81.818181%;
-	//transition-timing-function: linear;
 }
 
 #minuteHand {
 	width: 10em;
 	height: 1.2%;
-	top: 11.7em;
+	top: 11.2em;
 	left: 2em;
-	//animation: rotate 3600s infinite steps(59);
 }
 
 #hourHand {
 	height: 1.8%;
 	width: 7em;
 	left: 5em;
-	top: 11.35em;
-	//animation: rotate 43200s infinite linear;	
+	top: 10.7em;
 }
-
-/* @keyframes rotate {
-	100% {
-		transform: rotateZ(360deg);
-	}
-} */
